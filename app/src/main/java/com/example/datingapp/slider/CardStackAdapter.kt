@@ -25,7 +25,7 @@ class CardStackAdapter(val context: Context, val item: List<String>) : RecyclerV
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun binding(data: String) {
-
+            
         }
     }
 }
