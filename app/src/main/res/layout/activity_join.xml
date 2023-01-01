@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_primary20"
+    tools:context=".auth.JoinActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_baseline_person_24"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextColor="@color/material_dynamic_neutral_variant70"
+                android:textColorHint="@color/material_dynamic_neutral_variant70">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailArea"
+                    android:hint="email"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextColor="@color/material_dynamic_neutral_variant70"
+                android:textColorHint="@color/material_dynamic_neutral_variant70"
+                app:counterTextColor="@color/material_dynamic_neutral_variant70"
+                app:counterMaxLength="10"
+                app:counterEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordArea"
+                    android:hint="password"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextColor="@color/material_dynamic_neutral_variant70"
+                android:textColorHint="@color/material_dynamic_neutral_variant70"
+                app:counterTextColor="@color/material_dynamic_neutral_variant70"
+                app:counterMaxLength="10"
+                app:counterEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="password check"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                app:hintTextColor="@color/material_dynamic_neutral_variant70"
+                android:textColorHint="@color/material_dynamic_neutral_variant70">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="닉네임"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextColor="@color/material_dynamic_neutral_variant70"
+                android:textColorHint="@color/material_dynamic_neutral_variant70">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="성별"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextColor="@color/material_dynamic_neutral_variant70"
+                android:textColorHint="@color/material_dynamic_neutral_variant70">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="지역"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextColor="@color/material_dynamic_neutral_variant70"
+                android:textColorHint="@color/material_dynamic_neutral_variant70">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="나이"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/getJoinButton"
+                android:text="회원가입"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mainColor"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

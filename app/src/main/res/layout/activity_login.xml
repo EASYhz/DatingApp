@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_primary20"
+    tools:context=".auth.LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:hintTextColor="@color/material_dynamic_neutral_variant70"
+        android:textColorHint="@color/material_dynamic_neutral_variant70">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailLoginArea"
+            android:hint="email"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:hintTextColor="@color/material_dynamic_neutral_variant70"
+        android:textColorHint="@color/material_dynamic_neutral_variant70"
+        app:counterTextColor="@color/material_dynamic_neutral_variant70"
+        app:counterMaxLength="10"
+        app:counterEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordLoginArea"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/getLoginButton"
+        android:text="로그인"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainColor"/>
+
+</LinearLayout>
